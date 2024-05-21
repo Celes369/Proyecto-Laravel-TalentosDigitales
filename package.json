@@ -1,7 +1,14 @@
 {
     "private": true,
-    "scripts": { "dev": "npm run development", "development": "mix", "watch": "mix watch", "watch-poll": "mix watch -- --watch-options-poll=1000", "hot": "mix watch --hot", "prod": "npm run production", "production": "mix --production" }, 
-
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
     "devDependencies": {
         "@popperjs/core": "^2.10.2",
         "axios": "^1.6.8",
@@ -12,5 +19,8 @@
         "resolve-url-loader": "^5.0.0",
         "sass": "^1.32.11",
         "sass-loader": "^11.0.1"
+    },
+    "dependencies": {
+        "admin-lte": "^3.2.0"
     }
 }

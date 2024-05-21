@@ -1,0 +1,10 @@
+.customFileLabelAvatar::after{
+    content: "Avatar" !important;
+}
+
+.userImage{
+    width: 35px;
+    height: 35px;
+}
+
+

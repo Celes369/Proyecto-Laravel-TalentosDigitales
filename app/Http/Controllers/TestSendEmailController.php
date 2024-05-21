@@ -8,6 +8,7 @@ use Illuminate\Contracts\Mail\Mailable;
 use App\Mail\SendTestEmail;
 use App\Jobs\SendEmailTestJob;
 
+
 class TestSendEmailController extends Controller
 {
     /**
@@ -92,7 +93,9 @@ class TestSendEmailController extends Controller
      */
     public function sendEmailTest()
     {
-        //Mail::to('c313369@gmail.com')->send(new SendTestEmail('Talentos'));
-        SendEmailTestJob::dispatch('Talentos');
+        Mail::to('c313369@gmail.com')->send(new SendTestEmail('Celeste'));
+        //SendEmailTestJob::dispatch('Talentos');
+        return redirect('login')->with('success', 'Ya te encuentas registrado ingresa con tu usuario o email y tu contraseña');
+
     }
 }
