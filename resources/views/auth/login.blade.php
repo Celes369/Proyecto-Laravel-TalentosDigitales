@@ -5,8 +5,15 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
+               <!-- Solo para confirmar el envio de mails -->
                 <div class="card-header">{{ __('Login') }}</div>
+                 @if (session('success'))
+                    <div class="alert alert-success">
+                        {{ session('success') }}
+                    </div>
+                @endif
 
+                <!-- para visualizar lor mensajes por errores en los datos de entrada -->
                 <div class="card-body">
                     @if (Session::has('flash_message'))
                         @if (Session::get('flash_message_class') <> " ")
